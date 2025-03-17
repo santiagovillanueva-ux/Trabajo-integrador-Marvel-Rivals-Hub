@@ -1,0 +1,1 @@
+La idea principal de la pagina es ser un lugar en el que los fanaticos del juego Marvel Rivals puedan ver mas acerca de las ultimas noticias del juego, yendo desde actualizaciones de heroes hasta noticias de parches y videos de youtube sobre heroes, adicionalmente incluye informacion acerca de los heroes y mapas del mismo. 
