@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+
+
+:root {
+    --color-fondo: #000;
+    --color-texto: #fff;
+    --color-acento: yellow;
+}
+
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: 'Aldrich', sans-serif;
+}
+
+.navbar-nav{
+    margin: auto;
+    padding-left: 60px;
+    }
+
+
+.navbar-nav .nav-link {
+    margin: 10px;
+    color: white !important;
+    text-transform: uppercase;  
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--color-acento) !important;
+}
+.navbar-toggler {
+    border: 2px solid var(--color-acento); 
+    padding: 8px 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.navbar-toggler:hover {
+    background: var(--color-acento);
+}
+
+.navbar-toggler-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.navbar-collapse {
+    padding: 10px;
+    border-radius: 5px;
+    }
+@media (max-width: 993px) {    
+    .navbar-collapse {
+    text-align: center;    
+}    
+    .navbar-nav {
+    display: flex;        
+    flex-direction: row;   
+    justify-content: center;   
+    align-items: center;
+    
+}    
+    .navbar-nav .nav-link {
+    font-size: 16px;        
+    padding: 10px;   
+}
+}
+section {
+    padding: 40px 0;
+}
+
+h2 {
+    color: var(--color-acento);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #2b2d42; 
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+footer p {
+    font-size: 14px; 
+    margin: 0;
+}
+
+
+.social-media {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon img {
+    width: 25px; 
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    filter: brightness(0) invert(1);
+}
+
+.social-icon img:hover {
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 768px) {
+    footer .container {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .social-media {
+        margin-top: 10px;
+    }
+
+    footer p {
+        font-size: 12px; 
+    }
+}
+
+
+@media (max-width: 750px) {
+    .search-input {
+        width: 70%;
+    }
+}
